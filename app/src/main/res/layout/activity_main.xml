@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/crescente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listView"
+        android:text="Crescente"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/descrescente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/crescente"
+        android:layout_below="@id/listView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Decrescente"
+        />
+
+    <Button
+        android:id="@+id/embaralhado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Embaralhado"
+        android:layout_toRightOf="@id/descrescente"
+        android:layout_below="@id/listView"
+        />
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crescente"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:text="Adicionar"
+        android:layout_marginLeft="20dp"
+
+      />
+
+
+
+
+</RelativeLayout>
