@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jokenpo">
+
+
+    <TextView
+        android:id="@+id/tv01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jokenpo"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/ivComp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/papel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv01"
+        android:layout_marginTop="100dp"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jogue"
+        android:layout_below="@id/ivComp"
+        android:layout_marginTop="120dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/ivComp"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/btnPedra"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/pedra"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnPapel"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btnPedra"
+        android:layout_below="@id/tvResult"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/papel"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnTesoura"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/btnPedra"
+        android:layout_below="@id/tvResult"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/tesoura"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/btnBackJokenpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voltar_ao_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnTesoura"
+        android:layout_marginTop="100dp"/>
+
+</RelativeLayout>
