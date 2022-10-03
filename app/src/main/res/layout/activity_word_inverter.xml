@@ -16,13 +16,44 @@
         android:layout_marginTop="50dp"
         />
 
+
+    <EditText
+        android:id="@+id/etWordInverter"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite uma palavra"
+        android:layout_below="@id/title"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvWordInverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Palavra invertida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:layout_below="@id/etWordInverter"
+        />
+
+
+    <Button
+        android:id="@+id/btnInvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="inverter_palavra"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvWordInverter"
+        android:layout_marginTop="150dp"/>
+
     <Button
         android:id="@+id/btnBackWordInverter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/voltar_ao_menu"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/title"
+        android:layout_below="@id/btnInvert"
         android:layout_marginTop="100dp"/>
 
 
