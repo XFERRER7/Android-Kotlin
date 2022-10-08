@@ -15,22 +15,15 @@ class WordInverter : AppCompatActivity() {
 
         val btnBack = findViewById<Button>(R.id.btnBackWordInverter)
         val btnInvert = findViewById<Button>(R.id.btnInvert)
-        val label = findViewById<TextView>(R.id.tvWordInverter)
         val input = findViewById<EditText>(R.id.etWordInverter)
 
-
-        input.doOnTextChanged { text, start, before, count ->
-
-            label.text = ""
-
-        }
-
         btnInvert.setOnClickListener {
+
             val word = input.text
             val invertedWord = word.reversed()
-
-            label.text = invertedWord
-
+            val intent = Intent(this, WordInverter2::class.java)
+            intent.putExtra("word", invertedWord)
+            startActivity(intent)
 
         }
 

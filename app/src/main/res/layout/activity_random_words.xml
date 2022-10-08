@@ -16,14 +16,68 @@
         android:layout_marginTop="50dp"
         />
 
+
+    <EditText
+        android:id="@+id/inputRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Digite um nome ou valor"
+        android:layout_below="@id/title"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        />
+
+    <Button
+        android:id="@+id/btnAddRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="380dp"
+        android:textSize="20dp"
+        android:layout_below="@id/title"
+        />
+
+
+    <TextView
+        android:id="@+id/wordRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_below="@id/btnAddRandom"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <ListView
+        android:id="@+id/lvRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/wordRandom"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerar palavra aleatória"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lvRandom"
+        android:layout_marginTop="100dp"/>
+
+
     <Button
         android:id="@+id/btnBackRandomWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/voltar_ao_menu"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/title"
-        android:layout_marginTop="100dp"/>
+        android:layout_below="@id/btnRandom"
+        android:layout_marginTop="50dp"/>
 
 
 </RelativeLayout>
